@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TEXTLATE - Pesquisa Inteligente de Documentos</title>
+    <title>Textlate - Pesquisa Inteligente</title>
     
     <!-- Google Custom Search -->
     <script async src="https://cse.google.com/cse.js?cx=161989775ea1d4dcd"></script>
@@ -14,7 +14,7 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #d9d9c7;
             text-align: center;
         }
 
@@ -27,15 +27,13 @@
             font-weight: bold;
         }
 
-        /* Nome do site */
         .site-title {
-            font-size: 32px;
+            font-size: 50px;
             font-weight: bold;
-            color: #ffcc00;
-            letter-spacing: 2px;
+            color: black;
         }
 
-        /* Container Principal */
+        /* Caixa de Pesquisa */
         .container {
             max-width: 600px;
             margin: 40px auto;
@@ -45,7 +43,6 @@
             border-radius: 8px;
         }
 
-        /* Barra de pesquisa */
         input {
             width: 80%;
             padding: 12px;
@@ -55,19 +52,26 @@
             margin-bottom: 10px;
         }
 
-        button {
-            padding: 12px 20px;
-            background-color: #ffcc00;
-            color: black;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            font-weight: bold;
+        /* Botão para a Lista de Textos */
+        .button-container {
+            margin-top: 20px;
         }
 
-        button:hover {
-            background-color: #e6b800;
+        .textos-button {
+            padding: 15px 20px;
+            background-color: #9b59b6;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .textos-button:hover {
+            background-color: #7d3c98;
         }
 
         /* Rodapé */
@@ -79,23 +83,23 @@
     </style>
 </head>
 <body>
-    <!-- Cabeçalho -->
     <header>
-        <span class="site-title">TEXTLATE</span>
-        <p>Pesquisa Inteligente de Documentos</p>
+        <span class="site-title">Textlate</span>
+        <p>Ferramenta de busca de textos para aulas de tradução</p>
     </header>
     
-    <!-- Área de Pesquisa -->
     <div class="container">
-        <h2>Encontre Ofícios, Memorandos e Cartas Oficiais</h2>
-        <p>Digite suas palavras-chave e descubra documentos relevantes na web.</p>
-        
         <div class="gcse-searchbox-only"></div>
+        <p>Desenvolvido por Júlia Valverde</p>
     </div>
 
-    <!-- Rodapé -->
+    <!-- Botão para acessar a lista de textos -->
+    <div class="button-container">
+        <a href="textos.html" class="textos-button">Clique aqui para ver os textos mais traduzidos em órgãos públicos</a>
+    </div>
+
     <footer>
-        <p>&copy; 2025 TEXTLATE - Desenvolvido por Júlia</p>
+        <p>&copy; 2025 Textlate - Desenvolvido por Júlia</p>
     </footer>
 </body>
 </html>
